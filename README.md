@@ -1,4 +1,4 @@
-Guia de comandos para SQL
+# GUIA DE COMANDOS PARA SQL
 
 fore_name: Nome Próprio
 
@@ -102,7 +102,7 @@ SELECT fore_name, qte_pontos FROM pessoas WHERE qte_pontos > 70;
 SELECT qte_pontos + 10 FROM pessoas WHERE qte_pontos < 70;
 
 ## (wip)
-SELECT fore_name, last_name, qte_pontos FROM pessoas WHERE qte_pontos >= max (qte_pontos)
+SELECT fore_name, last_name, qte_pontos FROM pessoas WHERE qte_pontos >= MAX (qte_pontos)
 
 SELECT fore_name, last_name, qte_pontos FROM pessoas WHERE qte_pontos >= (select MAX(qte_pontos) from Pessoas)
 
@@ -135,7 +135,6 @@ SELECT MAX(CAST(qte_pontos AS CHAR)) FROM pessoas
 SELECT MAX(CAST(qte_pontos AS INT)) FROM pessoas
 
 # (wip)
-SELECT fore_name, last_name FROM pessoas;
 
 SELECT fore_name, UPPER(last_name) FROM pessoas;
 
